@@ -1,0 +1,81 @@
+
+
+
+static
+-先做(比起non-static)
+-可無建立物件直接使用
+-
+
+random:
+Math.random()*range; //0~range-1
+
+子類別物件不能指向副類別，而父類別可以指向子類別
+class circle{}
+class coin extends circle{}
+circle test1 = new coin; //work
+coin test2 = new circle; //error
+
+繼承: is-a ->  ex. coin is a circle
+隸屬: has-a -> ex. circle has a radius
+
+class methom
+1. getClass()
+    ex.
+        Circle father = new Coin();
+        System.out.println(father.getClass()); //class Coin, 為子物件
+2. equals()
+    說明: 是否在同一個記憶體位子
+3. toString()
+    說明: 內容物轉字串
+
+設計樣式: (builder design pattern)
+-建構式設計樣式
+    唯一class物件(只有一個記憶體存)
+    ex.
+        public class EagerInitalization{
+            private static final EagerInitalization instance = new EagerInitalization();
+            private EagerInitalization(){}// 寫這行的目的為: 使外部看不到建構函數，不寫的話，java編譯會自動加一個
+            public static EagerInitalization getInstance(){ return instance; }
+        }
+    ex2. 
+        public class StaticBlockSingleton{
+            private static StaticBlockSingleton instance;
+            private StaticBlockSingleton(){}
+            static{
+                try{
+                    instance = new StaticBlockSingleton();
+                }catch(Exception e){
+                    throw new RuntimeException("Exception occured in creating singleton instance");
+                }
+            }
+            public static StaticBlockSingleton getInstance(){ return instance; }
+        }
+    ex3.
+        public class LazyInitializedSingleton{
+            private static LazyInitializedSingleton instance;
+            private LazyInitializedSingleton(){}
+            public static LazyInitializedSingleton getInstance(){
+                if(instance==null){
+                    instance = new LazyInitializedSingleton();
+                }
+                return instance;
+            }
+        }
+    ex4.
+        public class BillPughSingleton{
+            private BillPughSingleton(){}
+            private static class SingletonHelper{//return時才呼叫建立
+                private static final BillPughSingleton INSTANCE = new BillPughSingleton();
+            }
+            public static BillPughSingleton getInstance(){
+                return SingletonHelper.INSTANCE;
+            }
+        }
+    說明: 前兩個在載入記憶體時，就會先建立。
+    第三個在遇到多執行續會出現問題。
+    解法1. 
+        
+-
+-
+
+
