@@ -39,7 +39,7 @@ public class reviewFinal {
         System.out.println("setB BC: "+dataSetB.findBoundingCircle());
 
         // find data points localed within the intersection of bounding circle A and B (20%)
-        DataSet icAB = dataSetA.boundingCircleInterset(dataSetB);
+        DataSet icAB = dataSetB.boundingCircleInterset(dataSetA);
         System.out.println("data points within BB intersection: "+icAB);
     }
 }
@@ -73,7 +73,7 @@ class Circle{
         return (center.getDistanceTo(pt)<=radius);
     }
     public String toString(){
-        return "center=("+(int)(this.center.getX()*10)/10.0+","+(int)(this.center.getY()*10)/10.0+"), radius="+(int)(radius*1000)/1000.0;
+        return "center=("+(int)(this.center.getX()*10)/10.0+","+(int)(this.center.getY()*10)/10.0+"), radius="+(int)(radius*10000)/10000.0;
     }
 }
 class TwoDimPoint{
@@ -98,13 +98,13 @@ class TwoDimPoint{
         return (Math.sqrt(Math.pow(pt.getX()-x, 2)+Math.pow(pt.getY()-y, 2)));
     }
     public String toString(){
-        return "("+this.x+","+this.y+")";
+        return "("+(int)(this.x*10)/10.0+","+(int)(this.y*10)/10.0+")";
     }
 }
 class DataSet{
     final int defaultCapacity=10;
     private int capacity, top;
-    protected TwoDimPoint[] points;
+    private TwoDimPoint[] points;
     public DataSet(){
         this.capacity = defaultCapacity;
         this.top = 0;
@@ -120,6 +120,12 @@ class DataSet{
     }
     public int size(){
         return top;
+    }
+    public TwoDimPoint getPt(int index){
+        if(index>=0&&index<top){
+            return new TwoDimPoint(points[index].getX(), points[index].getY());
+        }
+        return null;
     }
     public void addTwoDimPoint(TwoDimPoint newPoint){
         if(top==capacity-1){
@@ -160,13 +166,13 @@ class DataSet{
         DataSet result = new DataSet();
         Rectangle rA = findBoundingBox();
         Rectangle rB = B.findBoundingBox();
-        for(int i=0; i<top; i++){
+        for(int i=0; i<size(); i++){
             if(rB.contains(points[i]))
                 result.addTwoDimPoint(points[i]);
         }
         for(int i=0; i<B.size(); i++){
-            if(rA.contains(B.points[i]))
-                result.addTwoDimPoint(B.points[i]);
+            if(rA.contains(B.getPt(i)))
+                result.addTwoDimPoint(B.getPt(i));
         }
         return result;
     }
@@ -174,13 +180,13 @@ class DataSet{
         DataSet result = new DataSet();
         Circle cA = findBoundingCircle();
         Circle cB = B.findBoundingCircle();
-        for(int i=0; i<top; i++){
+        for(int i=0; i<size(); i++){
             if(cB.contains(points[i]))
                 result.addTwoDimPoint(points[i]);
         }
         for(int i=0; i<B.size(); i++){
-            if(cA.contains(B.points[i]))
-                result.addTwoDimPoint(B.points[i]);
+            if(cA.contains(B.getPt(i)))
+                result.addTwoDimPoint(B.getPt(i));
         }
         return result;
     }
