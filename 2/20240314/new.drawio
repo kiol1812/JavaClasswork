@@ -1,0 +1,158 @@
+<mxfile host="app.diagrams.net" modified="2024-03-20T04:16:54.409Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="2l7tJIC1_6MmkFGtPz0f" version="24.0.7" type="device">
+  <diagram name="Page-1" id="i9VLAQFJ01TJVlCxT4dZ">
+    <mxGraphModel dx="1400" dy="696" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-1" value="Position" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="585" width="200" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-1">
+          <mxGeometry y="26" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-2" value="- x : int&lt;div&gt;- y : int&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-1">
+          <mxGeometry y="34" width="200" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-4" value="&lt;div&gt;+ Position(int x, int y) :constructor&lt;/div&gt;+ getX(): int&lt;div&gt;+ getY(): int&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-1">
+          <mxGeometry y="68" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" edge="1" parent="1" source="nvkWOakQVlz0TeXbo-5P-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="510" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="630" y="560" />
+              <mxPoint x="470" y="560" />
+              <mxPoint x="470" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-5" value="TicTacToeChessBoard" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="590" width="220" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-6" value="- final static width: int&lt;div&gt;- final static height : int&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-5">
+          <mxGeometry y="26" width="220" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-5">
+          <mxGeometry y="68" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-8" value="+ TicTacToeChessBoard(): constructor" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-5">
+          <mxGeometry y="76" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" edge="1" parent="1" source="nvkWOakQVlz0TeXbo-5P-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="510" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="140" y="540" />
+              <mxPoint x="251" y="540" />
+              <mxPoint x="251" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-9" value="GomokuChessBoard" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="585" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-9">
+          <mxGeometry y="26" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-12" value="+ GomokuChessBoard(): constructor" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-9">
+          <mxGeometry y="34" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" edge="1" parent="1" source="nvkWOakQVlz0TeXbo-5P-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="nvkWOakQVlz0TeXbo-5P-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-13" value="TicTacToe" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="291" width="180" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-14" value="- tcb : TicTacToeChessboard" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-13">
+          <mxGeometry y="26" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-13">
+          <mxGeometry y="52" width="180" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-16" value="@overtide start(): void&lt;div&gt;@override chickGameOver(): int&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-13">
+          <mxGeometry y="60" width="180" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" edge="1" parent="1" source="nvkWOakQVlz0TeXbo-5P-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="nvkWOakQVlz0TeXbo-5P-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-17" value="Gomoku&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="291" width="180" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-18" value="- gcb : GomokuChessboard" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-17">
+          <mxGeometry y="26" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-17">
+          <mxGeometry y="52" width="180" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-20" value="@overtide start(): void&lt;div&gt;@override chickGameOver(): int&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-17">
+          <mxGeometry y="60" width="180" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-21" value="ChessBoardGame" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="10" width="820" height="234" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-22" value="- cb : chessBoard&lt;div&gt;- players : Player[]&lt;/div&gt;&lt;div&gt;- rounds : int&lt;/div&gt;&lt;div&gt;- endRound: int&lt;/div&gt;&lt;div&gt;- whoRound: int&lt;/div&gt;&lt;div&gt;- static sc : Scanner&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-21">
+          <mxGeometry y="26" width="820" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-23" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-21">
+          <mxGeometry y="118" width="820" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-24" value="+ ChessBoardGame() : constuctor&lt;div&gt;+ start() : void&lt;/div&gt;&lt;div&gt;+ checkGameOver() : void&lt;/div&gt;&lt;div&gt;+ nextRound() : void&lt;/div&gt;&lt;div&gt;+ setEndRound(int e) : void&lt;/div&gt;&lt;div&gt;+ getWhosRound() : int&lt;/div&gt;&lt;div&gt;+ getPlayer(int index) : Player&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-21">
+          <mxGeometry y="126" width="820" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamond;endFill=0;" edge="1" parent="1" source="nvkWOakQVlz0TeXbo-5P-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="810" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-25" value="Player" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="291" width="160" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-26" value="- name : String&lt;div&gt;- use : int&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-25">
+          <mxGeometry y="26" width="160" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-27" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-25">
+          <mxGeometry y="68" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-28" value="+ Player() : constuctor&lt;div&gt;+ getUse() : int&lt;/div&gt;&lt;div&gt;+ toString : String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-25">
+          <mxGeometry y="76" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamond;endFill=0;" edge="1" parent="1" source="nvkWOakQVlz0TeXbo-5P-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="nvkWOakQVlz0TeXbo-5P-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-29" value="ChessBoard" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="235" y="291" width="270" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-30" value="- width : int&lt;div&gt;- height : int&lt;/div&gt;&lt;div&gt;- dir : int[][]&lt;/div&gt;&lt;div&gt;- chessBoardb : int[][]&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-29">
+          <mxGeometry y="26" width="270" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-31" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-29">
+          <mxGeometry y="90" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="nvkWOakQVlz0TeXbo-5P-32" value="+ getWidth() : int&lt;div&gt;+ getHeight() : int&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getPositionValue(int x, int y) : int&lt;/div&gt;&lt;div&gt;+ positionVaild(Position p, int ignore) : boolean&lt;/div&gt;&lt;div&gt;+ place : void&lt;/div&gt;&lt;div&gt;+ showChessBoard() : void&lt;/div&gt;&lt;div&gt;+ existLine(int use, int lineLenght) : boolean&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nvkWOakQVlz0TeXbo-5P-29">
+          <mxGeometry y="98" width="270" height="112" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
