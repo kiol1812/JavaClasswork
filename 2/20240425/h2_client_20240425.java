@@ -13,10 +13,10 @@ public class h2_client_20240425 {
             Socket s=new Socket("127.0.0.1", 2525);
             System.out.println("connected");
             BufferedReader input = new BufferedReader(new InputStreamReader(s.getInputStream()));
-            String message;o
+            String message;
             while((message=input.readLine())!=null){
             }
-            s.close();o
+            s.close();
         }catch(Exception e){
             System.out.println(e);
         }
